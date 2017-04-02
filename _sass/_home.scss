@@ -1,0 +1,98 @@
+.home-layout {
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+    li {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 300px;
+    @media screen and (max-width: 450px) {
+        width: 9rem;
+    }
+}
+
+
+.feature-image {
+    height: 100%;
+    width: 100%;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+
+.post-loop {
+    margin-top: 3rem;
+    padding: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @media screen and (max-width: 400px) {
+        margin-top: 1rem; 
+    }
+    date {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: rgba(white, .7);
+    }
+    li {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 300px;
+        -ms-flex: 0 1 300px;
+        flex: 0 1 300px;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+        margin: 20px;
+        display: flex;
+        height: 200px;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+        border-radius: 5px;
+        position: relative;
+    }
+    h2, span {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: white;
+        padding: 15px;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, .5);
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    span {
+        color: rgba(white, .85);
+    }
+}
